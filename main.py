@@ -92,7 +92,7 @@ def main():
 
     news = get_news()
     output = client.models.generate_content(
-                        model="gemini-2.5-flash",
+                        model="gemini-2.0-flash",
                         contents=f"Новости:{news} НИ В КОЕМ СЛУЧАЕ НЕ ВЫБИРАТЬ КАКОЙ-ТО НОВОСТЬ СВЯЗАННЫЙ С: ",
                         config=config,
                     )
